@@ -4,16 +4,17 @@ import banner from "../../public/Banner.jpg";
 const Banner = () => {
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10">
-        <div className="w-full order-2 md:order-1 md:w-1/2 ">
-          <div className="space-y-12 mt-12 md:mt-32">
-            <h1 className="text-4xl font-bold">
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col gap-4 md:flex-row my-10">
+        <div className="w-full order-2 md:order-1 md:w-1/2 mt-12 md:mt-36 ">
+          <div className="space-y-8">
+            <h1 className="text-2xl md:text-4xl font-bold">
               Hello, Welcomes here to learn something{" "}
               <span className="text-pink-500">new everyday!!!</span>
             </h1>
-            <p className="text-xl">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
-              odit voluptates beatae quo mollitia quisquams obcaecati delectus.
+            <p className="text-sm md:text-xl">
+              Lorem ipsum, dolor sit amet consectetur obcaecati adipisicing
+              elit. Maxime odit voluptates beatae quo obcaecati mollitia
+              quisquams obcaecati delectus.
             </p>
             <label className="input input-bordered flex items-center gap-2">
               <svg
@@ -34,7 +35,7 @@ const Banner = () => {
           </div>
           <button className="btn btn-secondary mt-6 px-10">Login</button>
         </div>
-        <div className="order-1 w-full md:w-1/2 ">
+        <div className="order-1 w-full mt-20 md:w-1/2 ">
           <img src={banner} className="w-92 h-92" alt="banner logo" />
         </div>
       </div>
