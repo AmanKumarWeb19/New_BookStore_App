@@ -1,4 +1,5 @@
 import UserModel from "../model/user.model.js";
+import bcryptjs from "bcryptjs";
 
 export const signup = async (req, res) => {
   try {
@@ -10,7 +11,13 @@ export const signup = async (req, res) => {
       return res.status(400).send({ message: "User Already exist" });
     }
 
-    const createdUser = new UserModel({ fullname, email, password });
+    const hashPassword = await bcryptjs.hash(password, 10);
+
+    const createdUser = new UserModel({
+      fullname: fullname,
+      email: email,
+      password: hashPassword,
+    });
 
     await createdUser.save();
 
@@ -20,3 +27,5 @@ export const signup = async (req, res) => {
     res.status(500).send({ message: "Internal server Error!!!" });
   }
 };
+
+export const login = async (req, res) => {};
