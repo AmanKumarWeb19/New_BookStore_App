@@ -46,7 +46,7 @@ const FreeBook = () => {
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
         <div>
           <h1 className="text-xl font-semibold pb-2">Free Offered Courses</h1>
-          <p>
+          <p className="text-lg">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Accusantium veritatis alias pariatur ad dolor repudiandae eligendi
             corporis nulla alias pariatur ad dolor non suscipit, iure neque

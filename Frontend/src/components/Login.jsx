@@ -1,22 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
 
 const Login = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => console.log(data);
+
   return (
-    <>
-      <div>
-        <dialog id="my_modal_3" className="modal">
-          <div className="modal-box">
-            <form method="dialog">
-              {/* if there is a button in form, it will close the modal */}
-              <Link
-                to="/"
-                className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
-              >
-                ✕
-              </Link>
-            </form>
-            <h3 className="font-bold text-lg text-pink-500">Login!</h3>
+    <div>
+      <dialog id="my_modal_3" className="modal">
+        <div className="modal-box">
+          <h3 className="font-bold text-lg text-pink-500">Login!</h3>
+
+          <form onSubmit={handleSubmit(onSubmit)} method="dialog">
+            {/* if there is a button in form, it will close the modal */}
+            <Link
+              to="/"
+              className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+            >
+              ✕
+            </Link>
+
             {/* Email */}
             <div className="mt-4 space-y-2">
               <span>Email:</span>
@@ -25,17 +34,31 @@ const Login = () => {
                 type="email"
                 placeholder="Enter Your Email"
                 className="w-80 px-3 py-1 border outline-none rounded-md"
+                {...register("email", { required: true })}
               />
+              <br />
+              {errors.email && (
+                <span className="text-sm text-red-600 ">
+                  This field is required
+                </span>
+              )}
             </div>
             {/* PAssword */}
             <div className="mt-4 space-y-2">
               <span>Password:</span>
               <br />
               <input
-                type="text"
+                type="password"
                 placeholder="Enter Your Password"
                 className="w-80 px-3 py-1 border outline-none rounded-md"
+                {...register("password", { required: true })}
               />
+              <br />
+              {errors.password && (
+                <span className="text-sm text-red-600 ">
+                  This field is required
+                </span>
+              )}
             </div>
             {/* Button */}
             <div className="flex justify-around mt-4">
@@ -52,10 +75,10 @@ const Login = () => {
                 </Link>
               </p>
             </div>
-          </div>
-        </dialog>
-      </div>
-    </>
+          </form>
+        </div>
+      </dialog>
+    </div>
   );
 };
 
