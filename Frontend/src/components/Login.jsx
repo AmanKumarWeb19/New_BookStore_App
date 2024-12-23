@@ -57,12 +57,12 @@ const Login = () => {
 
             {/* Email */}
             <div className="mt-4 space-y-2">
-              <span>Email:</span>
+              <span className="dark:text-black">Email:</span>
               <br />
               <input
                 type="email"
                 placeholder="Enter Your Email"
-                className="w-80 px-3 py-1 border outline-none rounded-md"
+                className="w-80 px-3 py-1 border outline-none rounded-md dark:text-black"
                 {...register("email", { required: true })}
               />
               <br />
@@ -74,12 +74,12 @@ const Login = () => {
             </div>
             {/* PAssword */}
             <div className="mt-4 space-y-2">
-              <span>Password:</span>
+              <span className="dark:text-black">Password:</span>
               <br />
               <input
                 type="password"
                 placeholder="Enter Your Password"
-                className="w-80 px-3 py-1 border outline-none rounded-md"
+                className="w-80 px-3 py-1 border outline-none rounded-md dark:text-black"
                 {...register("password", { required: true })}
               />
               <br />

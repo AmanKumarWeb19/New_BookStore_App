@@ -42,7 +42,7 @@ const SignUp = () => {
   };
   return (
     <>
-      <div className="flex h-screen items-center justify-center">
+      <div className="flex h-screen items-center justify-center dark:bg-slate-800">
         <div className="w-[600px]">
           <div className="modal-box">
             <h3 className="font-bold text-lg text-pink-500">Sign Up</h3>
@@ -57,12 +57,12 @@ const SignUp = () => {
               </Link>
               {/* Name */}
               <div className="mt-4 space-y-2">
-                <span>Name:</span>
+                <span className="dark:text-black">Name:</span>
                 <br />
                 <input
                   type="text"
                   placeholder="Enter Your Full Name"
-                  className="w-80 px-3 py-1 border outline-none rounded-md"
+                  className="w-80 px-3 py-1 border outline-none rounded-md dark:text-black"
                   {...register("fullname", { required: true })}
                 />
                 <br />
@@ -74,12 +74,12 @@ const SignUp = () => {
               </div>
               {/* Email */}
               <div className="mt-4 space-y-2">
-                <span>Email:</span>
+                <span className="dark:text-black">Email:</span>
                 <br />
                 <input
                   type="email"
                   placeholder="Enter Your Email"
-                  className="w-80 px-3 py-1 border outline-none rounded-md"
+                  className="w-80 px-3 py-1 border outline-none rounded-md dark:text-black"
                   {...register("email", { required: true })}
                 />
                 <br />
@@ -91,12 +91,12 @@ const SignUp = () => {
               </div>
               {/* PAssword */}
               <div className="mt-4 space-y-2">
-                <span>Password:</span>
+                <span className="dark:text-black">Password:</span>
                 <br />
                 <input
                   type="password"
                   placeholder="Enter Your Password"
-                  className="w-80 px-3 py-1 border outline-none rounded-md"
+                  className="w-80 px-3 py-1 border outline-none rounded-md dark:text-black"
                   {...register("password", { required: true })}
                 />
                 <br />
