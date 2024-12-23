@@ -4,7 +4,7 @@ const Cards = ({ item }) => {
   return (
     <>
       <div className="mt-4 my-6 p-3">
-        <div className="card bg-base-100 w-92 shadow-xl group overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl dark:bg-slate-900 dark:text-white dark:border">
+        <div className="card bg-base-100 w-92 shadow-xl duration-200 hover:scale-105 dark:bg-slate-800 dark:text-white dark:border">
           <figure className="overflow-hidden">
             <img
               className="transform group-hover:scale-110 transition duration-300 ease-in-out"
@@ -20,7 +20,7 @@ const Cards = ({ item }) => {
             <p>{item.title}</p>
             <div className="card-actions justify-between">
               <div className="badge badge-outline">${item.price}</div>
-              <div className="hover:bg-pink-500 hover:text-white duration-200 cursor-pointer px-2 py-1 rounded-full border-[2px]">
+              <div className="hover:bg-pink-500 hover:text-white duration-200 cursor-pointer px-2 py-1 rounded-full border-[2px] dark:bg-pink-500">
                 Buy Now
               </div>
             </div>
