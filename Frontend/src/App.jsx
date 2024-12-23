@@ -16,18 +16,9 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route
             path="/course"
-            element={
-              authUser ? (
-                <Courses />
-              ) : (
-                <Navigate to="https://new-bookstore-app-backend-hjhc.onrender.com/signup" />
-              )
-            }
+            element={authUser ? <Courses /> : <Navigate to="/signup" />}
           />
-          <Route
-            path="https://new-bookstore-app-backend-hjhc.onrender.com/signup"
-            element={<SignUp />}
-          />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
         <Toaster />
       </div>
