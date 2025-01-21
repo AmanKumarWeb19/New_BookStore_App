@@ -43,12 +43,19 @@ Live Demo: 🌐 https://new-bookstore-app.onrender.com/
 **Backend:** 
 
 **Node.js:** Server-side JavaScript runtime.
+
 **Express.js:** Framework for building APIs.
+
 **MongoDB:** NoSQL database for scalable data storage.
+
 **Mongoose:** Object Data Modeling (ODM) for MongoDB.
+
 **bcryptjs:** Secure password hashing.
+
 **dotenv:** Environment variable management.
+
 **cors:** Enable cross-origin resource sharing.
+
 **nodemon:** Auto-restart for development.
 
 
