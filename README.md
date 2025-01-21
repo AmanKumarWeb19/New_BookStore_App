@@ -149,7 +149,3 @@ Live Demo: 🌐 https://new-bookstore-app.onrender.com/
 **b. GitHub Repository: https://github.com/AmanKumarWeb19/New_BookStore_App.git**
 
 **c. Report Issues: https://github.com/AmanKumarWeb19/New_BookStore_App/issues**
-## Screenshots
-
-![App Screenshot](https://drive.google.com/file/d/1HjLIzMLVwW138CqiAAJk9Yk_AOaGlZHg/view?usp=sharing)
-
