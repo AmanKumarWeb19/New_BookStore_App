@@ -28,19 +28,27 @@ Live Demo: 🌐 https://new-bookstore-app.onrender.com/
 
 ## 💻 Tech Stack
 
-**Frontend:-**
+## **Frontend:-**
 
 **React.js:** Component-based UI development.
+
 **Tailwind CSS:** Modern styling framework for responsive design.
+
 **DaisyUI:** Pre-styled UI components for seamless design.
+
 **React Router DOM:** Navigation and routing.
+
 **Axios:** Simplified HTTP requests.
+
 **React Hook Form:** Form handling and validation.
+
 **React Slick & Slick Carousel:** For dynamic carousels.
+
 **React Hot Toast:** User notifications.
+
 **Vite:** Fast development server and build tool.
 
-**Backend:** 
+## **Backend:** 
 
 **Node.js:** Server-side JavaScript runtime.
 
